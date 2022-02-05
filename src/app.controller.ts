@@ -5,8 +5,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get()                                    //Aquí hacemos un GET desde el cliente a la ruta raíz.
   getHello(): string {
-    return this.appService.getHello();
+    return this.appService.getHello();      //Ya que este es el controlador de la ruta raíz.
   }
 }
